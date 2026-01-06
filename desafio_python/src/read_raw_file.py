@@ -6,21 +6,3 @@ def read_csv_file(path_csv_file: str):
                                                        # DictReader retorna nossos dados CSV em chave-valor, cada coluna sendo reconhecida como chave e os dados de colunas(individualmente) valor.
                                                        # A variável delimiter é adicionada ao código para indicar o caractere que separa as colunas uma das outras no nosso CSV sendo a ","(Vírgula). 
     return list(data)
-    
-
-read = read_csv_file(path_csv_file='./data/raw/funcionarios.csv')
-clean_data = []
-
-for linha in read:
-    linha_id = {coluna: dados for coluna, dados in linha.items() if not dados == ''}
-
-
-     
-    print(linha_id)
-            
-
-
-
-# with open("output.csv", "wb") as f:
-#     writer = csv.writer(f)            # Para salvar e garar relatório.
-#     writer.writerows(output_data)
