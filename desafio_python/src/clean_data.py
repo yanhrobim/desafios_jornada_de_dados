@@ -37,7 +37,7 @@ def clean_data(read_csv_file):
                         bonus_base = 1000
                         bonus_final = bonus_base + int(linha['salario']) * float(linha['bonus_percentual'])
 
-                        linha.update({'salario_com_bonus': f'{bonus_final}'})
+                        linha.update({'bonus_final': f'{bonus_final}'})
 
                         clean_data.append(linha)
 
