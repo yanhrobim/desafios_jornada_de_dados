@@ -1,4 +1,4 @@
-id,nome,area,salario,bonus_percentual,salario_com_bonus
+id,nome,area,salario,bonus_percentual,bonus_final
 1,Ana Souza,Vendas,4500,0.1,1450.0
 2,Bruno Lima,TI,7000,0.05,1350.0
 3,Carla Mota,Financeiro,0,0.2,1000.0
