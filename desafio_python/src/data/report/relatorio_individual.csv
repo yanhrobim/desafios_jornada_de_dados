@@ -1,0 +1,26 @@
+id,nome,area,salario,bonus_percentual,salario_com_bonus
+1,Ana Souza,Vendas,4500,0.1,1450.0
+2,Bruno Lima,TI,7000,0.05,1350.0
+3,Carla Mota,Financeiro,0,0.2,1000.0
+4,Daniel,TI,5200,0.1,1520.0
+6,Elisa Prado,Financeiro,6100,0.05,1305.0
+7,Fernando Dias,Vendas,4800,0.07,1336.0
+9,Maria Alves,TI,6100,0.12,1732.0
+10,Pedro Santos,Operações,5100,0.08,1408.0
+11,Lucas Pereira,TI,6800,0.1,1680.0
+12,Renata Costa,RH,4200,0.05,1210.0
+13,Marcos Vinícius,Vendas,0,0.2,1000.0
+14,Paula Nogueira,Financeiro,5900,0.09,1531.0
+15,Carlos Eduardo,TI,7500,0.15,2125.0
+17,Amanda Rocha,Vendas,4600,0.02,1092.0
+19,Juliana Pires,RH,3900,0.08,1312.0
+20,Thiago Martins,Financeiro,7200,0.12,1864.0
+21,Beatriz Lima,Operações,5100,0.05,1255.0
+22,Gabriel Souza,TI,0,0.1,1000.0
+23,Patrícia Melo,Vendas,4950,0.07,1346.5
+24,André Cunha,Financeiro,5800,0.04,1232.0
+25,Daniela Freitas,RH,4100,0.06,1246.0
+26,Felipe Araujo,TI,6900,0.1,1690.0
+27,Natalia Torres,Operações,5300,0.09,1477.0
+29,Luciana Barros,Financeiro,6100,0.11,1671.0
+30,Igor Teixeira,TI,6600,0.5,4300.0
