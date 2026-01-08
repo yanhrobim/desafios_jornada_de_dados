@@ -3,6 +3,7 @@ import re
 from read_raw_file import read_csv_file
 
 
+
 def clean_data(read_csv_file):
 
       clean_data = []
@@ -34,7 +35,7 @@ def clean_data(read_csv_file):
                         linha.update({'bonus_percentual': cleaned_value})
 
                         bonus_base = 1000
-                        bonus_final = bonus_base + int(linha['salario']) + float(linha['bonus_percentual'])
+                        bonus_final = bonus_base + int(linha['salario']) * float(linha['bonus_percentual'])
 
                         linha.update({'salario_com_bonus': f'{bonus_final}'})
 
