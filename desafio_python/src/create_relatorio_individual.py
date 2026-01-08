@@ -2,7 +2,7 @@ import csv
 
 def load_relatorio_final(clean_data: list):
     with open('./data/report/relatorio_individual.csv', 'w', newline='', encoding='utf-8') as csv_file:
-        fieldnames = ['id', 'nome', 'area', 'salario', 'bonus_percentual', 'salario_com_bonus']
+        fieldnames = ['id', 'nome', 'area', 'salario', 'bonus_percentual', 'bonus_final']
         csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
 
         csv_writer.writeheader()
@@ -14,4 +14,4 @@ def load_relatorio_final(clean_data: list):
                                 "area": dados['area'],
                                 "salario": dados['salario'],
                                 "bonus_percentual": dados['bonus_percentual'],
-                                "salario_com_bonus": dados['salario_com_bonus']})
+                                "bonus_final": dados['bonus_final']})
