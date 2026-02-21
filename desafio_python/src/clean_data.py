@@ -41,7 +41,6 @@ def clean_data(read_csv_file):
 
                         clean_data.append(linha)
 
-
       return clean_data
 
                   
