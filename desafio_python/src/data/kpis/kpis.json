@@ -1,7 +1,17 @@
-{
-    "Quantidade de Funcionarios na Area de TI": 8,
-    "Quantidade de Funcionarios na Area de Vendas": 5,
-    "Quantidade de Funcionarios na Area do Financeiro": 6,
-    "Quantidade de Funcionarios na Area de Operacoes": 3,
-    "Quantidade de Funcionarios na Area do RH": 3
-}
+[
+    {
+        "Nome": "Igor Teixeira",
+        "Bonus_Final": "4300.0",
+        "Top": 1
+    },
+    {
+        "Nome": "Carlos Eduardo",
+        "Bonus_Final": "2125.0",
+        "Top": 2
+    },
+    {
+        "Nome": "Thiago Martins",
+        "Bonus_Final": "1864.0",
+        "Top": 3
+    }
+]

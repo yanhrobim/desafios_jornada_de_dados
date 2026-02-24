@@ -1,6 +1,7 @@
 from read_raw_file import read_csv_file
 import collections
 import json
+import operator
 
 
 relatorio_individual = read_csv_file("./data/report/relatorio_individual.csv")
@@ -85,6 +86,23 @@ def bonus_geral_total():
 
     return bonus_total_geral
 
+def top3_funcionarios_maior_bonus_final():
+    top3_bonus_final = []
+    dados = []
+
+    for linha in relatorio_individual:
+
+        dados.append(linha)
+        dados.sort(key=operator.itemgetter('bonus_final'), reverse=True)
+        top = 0
+
+    for top3 in dados[:3]:
+            top += 1
+            top3_bonus_final.append({"Nome": top3['nome'],
+                                    "Bonus_Final": top3['bonus_final'],
+                                    "Top": top})
+
+    return top3_bonus_final
 
 
 
