@@ -1,8 +1,5 @@
 # Add Regras de Validação aos Dados.
 import re
-from read_raw_file import read_csv_file
-
-
 
 def clean_data(read_csv_file):
 

@@ -76,6 +76,14 @@ def media_salario_por_area():
 
     return avg_salario_por_area
 
+def bonus_geral_total():
+    bonus_de_cada_usuario = []
+    bonus_total_geral = {}
+    for dados in relatorio_individual:
+        bonus_de_cada_usuario.append(float(dados["bonus_final"]))
+        bonus_total_geral.update({"Bonus Total Geral": sum(bonus_de_cada_usuario)})
+
+    return bonus_total_geral
 
 
 
