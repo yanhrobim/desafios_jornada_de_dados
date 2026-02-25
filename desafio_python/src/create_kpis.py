@@ -15,11 +15,11 @@ def quantidade_funcionario_por_area():
 
         count[dados["area"]] += 1
 
-        quantidade_funcionario_area.update({"Quantidade de Funcionarios na Area de TI": count["TI"],
-                                            "Quantidade de Funcionarios na Area de Vendas": count["Vendas"],
-                                            "Quantidade de Funcionarios na Area do Financeiro": count["Financeiro"],
-                                            "Quantidade de Funcionarios na Area de Operacoes": count["Operações"],
-                                            "Quantidade de Funcionarios na Area do RH": count["RH"]})
+        quantidade_funcionario_area.update({"TI": count["TI"],
+                                            "Vendas": count["Vendas"],
+                                            "Financeiro": count["Financeiro"],
+                                            "Operações": count["Operações"],
+                                            "RH": count["RH"]})
 
     return quantidade_funcionario_area
 
@@ -43,28 +43,28 @@ def media_salario_por_area():
                                                     # Com a lista, o loop For adiciona todos os valores obtidos com append.
 
             media_de_salarios_ti = sum(salarios_ti) / len(salarios_ti)
-            avg_salario_por_area.update({"Media do Salario na Area de TI": round(media_de_salarios_ti, 2)})
+            avg_salario_por_area.update({"TI": round(media_de_salarios_ti, 2)})
         
         if dados['area'] == 'Vendas':
             salarios_vendas.append(float(dados['salario']))    
 
             media_de_salarios_vendas = sum(salarios_vendas) / len(salarios_vendas)
 
-            avg_salario_por_area.update({"Media do Salario na Area de Vendas": round(media_de_salarios_vendas, 2)})
+            avg_salario_por_area.update({"Vendas": round(media_de_salarios_vendas, 2)})
 
         if dados['area'] == 'RH':
                 salarios_rh.append(float(dados['salario']))   
 
                 media_de_salarios_rh = sum(salarios_rh) / len(salarios_rh)
 
-                avg_salario_por_area.update({"Media do Salario na Area de RH": round(media_de_salarios_rh, 2)})
+                avg_salario_por_area.update({"RH": round(media_de_salarios_rh, 2)})
 
         if dados['area'] == 'Operações':
             salarios_operacoes.append(float(dados['salario']))    
 
             media_de_salarios_operacoes = sum(salarios_operacoes) / len(salarios_operacoes)
 
-            avg_salario_por_area.update({f"Media do Salario na Area de Operacoes": round(media_de_salarios_operacoes, 2)})
+            avg_salario_por_area.update({f"Operacoes": round(media_de_salarios_operacoes, 2)})
             # Para médias que resultam em Dízima Periódica, utilizo o Round para arrendodar o valor real.
             # Com o objetivo de ter/fazer uma validação de dados.
 
@@ -73,7 +73,7 @@ def media_salario_por_area():
 
             media_de_salarios_financeiro = sum(salarios_financeiro) / len(salarios_financeiro)
 
-            avg_salario_por_area.update({"Media do Salario na Area de Financeiro": round(media_de_salarios_financeiro, 2)})
+            avg_salario_por_area.update({"Financeiro": round(media_de_salarios_financeiro, 2)})
 
     return avg_salario_por_area
 
@@ -87,7 +87,7 @@ def bonus_geral_total():
     return bonus_total_geral
 
 def top3_funcionarios_maior_bonus_final():
-    top3_bonus_final = []
+    top3_funcionarios_list = []
     dados = []
 
     for linha in relatorio_individual:
@@ -98,14 +98,22 @@ def top3_funcionarios_maior_bonus_final():
 
     for top3 in dados[:3]:
             top += 1
-            top3_bonus_final.append({"Nome": top3['nome'],
+            top3_funcionarios_list.append({"Nome": top3['nome'],
                                     "Bonus_Final": top3['bonus_final'],
                                     "Top": top})
 
-    return top3_bonus_final
+    return top3_funcionarios_list
 
+quantidade_funcionario_de_por_area = quantidade_funcionario_por_area()
+media_salario_de_por_area = media_salario_por_area()
+top3_funcionarios_com_maior_bonus_final = top3_funcionarios_maior_bonus_final()
 
+kpis = {}
+kpis.update({'Quantidade de Funcionario Por Área': quantidade_funcionario_de_por_area, 
+             'Media de Salario Por Área': media_salario_de_por_area,
+             'Top 3 Funcionarios com Maior Bonus Final': top3_funcionarios_com_maior_bonus_final})
 
+print(kpis)
 
-
-
+with open("./data/kpis/kpis.json", "w", encoding='utf-8') as kpis_json:
+     json.dump(kpis, kpis_json, indent=4, sort_keys=True, ensure_ascii=False)
