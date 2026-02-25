@@ -104,16 +104,16 @@ def top3_funcionarios_maior_bonus_final():
 
     return top3_funcionarios_list
 
-quantidade_funcionario_de_por_area = quantidade_funcionario_por_area()
-media_salario_de_por_area = media_salario_por_area()
-top3_funcionarios_com_maior_bonus_final = top3_funcionarios_maior_bonus_final()
+def create_kpis_json():
+    quantidade_funcionario_de_por_area = quantidade_funcionario_por_area()
+    media_salario_de_por_area = media_salario_por_area()
+    top3_funcionarios_com_maior_bonus_final = top3_funcionarios_maior_bonus_final()
 
-kpis = {}
-kpis.update({'Quantidade de Funcionario Por Área': quantidade_funcionario_de_por_area, 
-             'Media de Salario Por Área': media_salario_de_por_area,
-             'Top 3 Funcionarios com Maior Bonus Final': top3_funcionarios_com_maior_bonus_final})
+    kpis = {}
+    kpis.update({'Quantidade de Funcionario Por Área': quantidade_funcionario_de_por_area, 
+                'Media de Salario Por Área': media_salario_de_por_area,
+                'Top 3 Funcionarios com Maior Bonus Final': top3_funcionarios_com_maior_bonus_final})
 
-print(kpis)
 
-with open("./data/kpis/kpis.json", "w", encoding='utf-8') as kpis_json:
-     json.dump(kpis, kpis_json, indent=4, sort_keys=True, ensure_ascii=False)
+    with open("./data/kpis/kpis.json", "w", encoding='utf-8') as kpis_json:
+        json.dump(kpis, kpis_json, indent=4, sort_keys=True, ensure_ascii=False)
