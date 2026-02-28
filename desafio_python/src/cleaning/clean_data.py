@@ -1,4 +1,5 @@
 # Add Regras de Validação aos Dados.
+from src.ingestion.read_raw_file import read_csv_file
 import re
 
 def clean_data(read_csv_file):
@@ -43,11 +44,3 @@ def clean_data(read_csv_file):
       print(f"Limpeza de dados no arquivo CSV executada, dados limpos para KPIs!\n")
 
       return clean_data
-
-                  
-
-
-
-
-
-

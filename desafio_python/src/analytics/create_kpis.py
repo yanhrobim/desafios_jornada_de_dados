@@ -186,5 +186,4 @@ def create_kpis_json_file(relatorio_individual: list, path_to_kpis_json: str):
             with open(f"{path_to_kpis_json}", "w", encoding='utf-8') as kpis_json:
                 json.dump(kpis, kpis_json, indent=4, sort_keys=True, ensure_ascii=False)
 
-            print(f"Todas as KPIs foram criadas e desenvolvidas corretamente, a partir do arquivo CSV recebido. File .json está finalizado e localizado em: {path_to_kpis_json}")
-        
+            print(f"Todas as KPIs foram criadas e desenvolvidas corretamente, a partir do arquivo CSV recebido. File .json está finalizado e localizado em: '{path_to_kpis_json}'")
