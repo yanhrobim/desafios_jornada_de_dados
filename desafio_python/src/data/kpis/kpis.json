@@ -1,0 +1,38 @@
+{
+    "KPI": {
+        "Bonus Total Geral": {
+            "Bonus Total Geral": 38132.5
+        },
+        "Media de Salario Por Área": {
+            "Financeiro": 5183.33,
+            "Operacoes": 5166.67,
+            "RH": 4066.67,
+            "TI": 5762.5,
+            "Vendas": 3770.0
+        },
+        "Quantidade de Funcionario Por Área": {
+            "Financeiro": 6,
+            "Operações": 3,
+            "RH": 3,
+            "TI": 8,
+            "Vendas": 5
+        },
+        "Top 3 Funcionarios com Maior Bonus Final": [
+            {
+                "Bonus_Final": 4300.0,
+                "Nome": "Igor Teixeira",
+                "Top": 1
+            },
+            {
+                "Bonus_Final": 2125.0,
+                "Nome": "Carlos Eduardo",
+                "Top": 2
+            },
+            {
+                "Bonus_Final": 1864.0,
+                "Nome": "Thiago Martins",
+                "Top": 3
+            }
+        ]
+    }
+}

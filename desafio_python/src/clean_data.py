@@ -1,10 +1,9 @@
 # Add Regras de Validação aos Dados.
 import re
-from read_raw_file import read_csv_file
-
-
 
 def clean_data(read_csv_file):
+
+      print("Começando a limpeza nos dados brutos :)")
 
       clean_data = []
 
@@ -37,10 +36,11 @@ def clean_data(read_csv_file):
                         bonus_base = 1000
                         bonus_final = bonus_base + int(linha['salario']) * float(linha['bonus_percentual'])
 
-                        linha.update({'bonus_final': f'{bonus_final}'})
+                        linha.update({'bonus_final': f'{round(bonus_final, 2)}'})
 
                         clean_data.append(linha)
 
+      print(f"Limpeza de dados no arquivo CSV executada, dados limpos para KPIs!\n")
 
       return clean_data
 
