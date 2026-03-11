@@ -1,9 +1,5 @@
 import streamlit as st
 import pandas as pd
-import operator
-from src.ingestion.read_raw_file import read_csv_file
-from src.analytics.developing_kpis import media_salario_por_area, quantidade_funcionario_por_area
-
 
 st.set_page_config(layout='wide')
 st.title("KPIs Dashboards 📊")
@@ -17,7 +13,7 @@ coluna1, meio, coluna2 = st.columns(3) # Criação de Colunas apenas para coloca
 
 with meio:
     st.subheader("Bonus Total Geral")
-    
+
     st.subheader(f"RS $ {bonus_total_geral}")
 
 st.markdown('---')
