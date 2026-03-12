@@ -1,14 +1,18 @@
-[tool.poetry]
+[project]
 name = "desafio-python"
 version = "0.1.0"
 description = ""
-authors = ["Yan Robim <yanrobim@gmail.com>"]
+authors = [
+    {name = "Yan",email = "yanrobim@gmail.com"}
+]
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.11"
+requires-python = "^3.11"
+dependencies = [
+    "streamlit (>=1.54.0,<2.0.0)",
+    "plotly (>=6.5.2,<7.0.0)",
+]
 
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
