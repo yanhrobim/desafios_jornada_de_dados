@@ -4,8 +4,8 @@ import pandas as pd
 st.set_page_config(layout='wide')
 st.title("KPIs Dashboards 📊")
 
-kpis_json = pd.read_json("./desafio_python/data/kpis/kpis.json")
-relatorio_individual = pd.read_csv("./desafio_python/data/report/relatorio_individual.csv")
+kpis_json = pd.read_json("./data/kpis/kpis.json")
+relatorio_individual = pd.read_csv("./data/report/relatorio_individual.csv")
 
 bonus_total_geral = kpis_json['KPI']['Bonus Total Geral']['Bonus Total Geral']
 
