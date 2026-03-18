@@ -90,4 +90,4 @@ https://desafio-python-dashboard.streamlit.app/kpis_dashboard
 
 ## 🛢️ Desafio SQL
 
-Em processo... ⌛
+In processo... ⌛
