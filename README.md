@@ -1,13 +1,13 @@
 # Desafios Disponibilizados Jornada de Dados
 
-## Tópicos Repo
-
 * [🖊️ Jornada de Dados](#️-sobre-a-jornada)
 * [🤔 O Por que Deste Repositório](#-o-por-que-deste-repositório)
 * [🐍 Desafio Python](#-desafio-python)
   * [🎯 Bônus](#-bônus)
   * [📊 Dashboards](#-dashboards)
 * [🛢 Desafio SQL](#-desafio-sql)
+
+---
 
 ## 🖊️ Sobre a Jornada
 A ([Jornada de Dados](https://suajornadadedados.com.br/)) é um Roadmap voltado para estudos da área de dados em programação como: *Engenharia de Dados*, *Ciência de Dados* e *Analista de Dados*. O Roadmap contém **bootcamps** e workshops, para aprendizagem de ferramentas, linguagens amplamente utilizadas na área, através de práticas, projetos, exercícios, visando o auxílio a masterizar suas habilidades dentre aquilo que você tem o interesse de aprender.
