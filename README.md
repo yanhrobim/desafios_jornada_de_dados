@@ -1,7 +1,5 @@
 # Desafios Disponibilizados Jornada de Dados
 
-## Tópicos Repo
-
 * [🖊️ Jornada de Dados](#️-sobre-a-jornada)
 * [🚀 Tecnologias Utilizadas](#-tecnologias-utilizadas)
 * [🤔 O Por que Deste Repositório](#-o-por-que-deste-repositório)
@@ -10,6 +8,8 @@
   * [📌 Objetivos do Desafio](#-objetivos-do-desafio)
   * [📊 Dashboards (Bônus)](#-dashboards)
 * [🛢️ Desafio SQL](#-desafio-sql)
+
+---
 
 ## 🖊️ Sobre a Jornada
 
@@ -90,4 +90,8 @@ https://desafio-python-dashboard.streamlit.app/kpis_dashboard
 
 ## 🛢️ Desafio SQL
 
+<<<<<<< HEAD
 In processo... ⌛
+=======
+In process... ⌛
+>>>>>>> ea4893427eefe5c3c102e2afac9170b16a81f691
