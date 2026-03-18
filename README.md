@@ -34,11 +34,15 @@ Ou até mesmo o `relatorio_individual.csv` para visualizar os dados limpos de ca
 
 ---
 
-### **Relatório Individual**
+**Demo**: https://desafio-python-dashboard.streamlit.app/kpis_dashboard
+
+
+### **Relatório Individual (Screenshot)**
 ![image](/desafio_python/app/images/relatorio_individual_dash.png)
 
-### **KPIs**
+### **KPIs (Screenshot)**
 ![demo-video](/desafio_python/app/images/kpis_dash.gif)
+
 
 ## 🧪 Desafio SQL
 
