@@ -17,7 +17,6 @@ bonus_final = BONUS_BASE + salario * bonus_percentual
 3. **Gerar relatórios**:
 
    * `relatorio_individual.csv`: somente registros válidos com o cálculo de `bonus_final`.
-   * `erros.csv`: registros inválidos com o motivo do erro.
    * `kpis.json`: métricas agregadas, contendo:
 
      * quantidade de funcionários por área
@@ -110,7 +109,7 @@ media_por_area = df.groupby("area")["salario"].mean()
 ## Critérios de Avaliação
 
 * ✅ Validação correta das regras
-* ✅ Geração dos arquivos solicitados (`relatorio_individual.csv`, `erros.csv`, `kpis.json`)
+* ✅ Geração dos arquivos solicitados (`relatorio_individual.csv`, `kpis.json`)
 * ✅ Clareza e organização do código
 * ✅ Uso de boas práticas de Python (tratamento de erros, laços, condições)
 * ⭐ Bônus: uso de bibliotecas como **pandas** para simplificar etapas
