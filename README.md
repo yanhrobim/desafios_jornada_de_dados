@@ -7,7 +7,6 @@
   * [📖 Contexto](#-contexto)
   * [📌 Objetivos do Desafio](#-objetivos-do-desafio)
   * [📊 Dashboards (Bônus)](#-dashboards)
-* [🛢️ Desafio SQL](#-desafio-sql)
 
 ---
 
@@ -20,11 +19,10 @@ A ([Jornada de Dados](https://suajornadadedados.com.br/)) é um roadmap voltado 
 * Python  
 * Pandas *(somente para fins de dashboard)*  
 * Streamlit  
-* SQL *(em desenvolvimento)*  
 
 ## 🤔 O Por que Deste Repositório
 
-Com o objetivo de retomar e reforçar os estudos de programação voltados à área de dados, utilizei desafios disponibilizados pelo roadmap Jornada de Dados para prática de **Python** e **SQL**, visando melhorar a lógica de programação nessas linguagens.
+Com o objetivo de retomar e reforçar os estudos de programação voltados à área de dados, utilizei desafios disponibilizados pelo roadmap Jornada de Dados para prática de **Python**, visando melhorar a lógica de programação nessas linguagens.
 
 Em resumo, um repositório voltado para prática e evolução das habilidades.
 
@@ -87,7 +85,3 @@ https://desafio-python-dashboard.streamlit.app/kpis_dashboard
 ### 📊 KPIs
 
 ![KPIs](/desafio_python/app/images/kpis_dash.gif)
-
-## 🛢️ Desafio SQL
-
-In process... ⌛
