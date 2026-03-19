@@ -24,7 +24,12 @@ def clean_data(read_csv_file):
                                                                         # com lstrip() caso o número fosse no começo do nome 
                                                                         # e com rstrip() caso o número estivesse no fim.
 
-                  if not linha['bonus_percentual'] == 'abc' and not linha['bonus_percentual'] == 'xyz':  # Condição/Filtro pode ser quebrado facilmente se fosse outros caracteres, mas lidando com o funcionarios.csv em especifíco é o mais rápido e simples de se fazer.
+                  linha_bonus_percentual = re.search(r'^[+-]?\d+\.\d+$|^\d+$', linha['bonus_percentual'])
+                  # Utilização do módulo re (Regex) disponibilizado pelo Python, servindo nesta linha como principal filtro para aplicar uma regra de negócio, conter SOMENTE dados numéricos (float / int) na coluna de 'bonus_percentual'. Visando posteriormente fazer o cálculo de Bônus Final.
+                  # O código encontra dentro dos dados da coluna 'bonus_percentual' somente valores numéricos, a lógica seria como: Pode ser negativos ou positivos, Pode ser float ou int, Pode ser somente número.
+                  # Uma observação importante é que nesta parte do código teriamos como resposta valores numéricos negativos, não combinando para o cálculo de 'bonus_final', MAS que será executado mais uma etapa de filtragem no código para limpeza de caractéres. (Logicamente pensando que: Valores negativos de 'bonus_percentual' seriam erros de digitação, não que o Funcionário não possuí bônus.)
+
+                  if linha_bonus_percentual: # Caso tentasse float(linha['bonus_percentual']) geraria erro por conta de haver valores strings na coluna, como 'xyz'. Esta intervenção sendo o principal motivo para o filtro acima.
                   
 
                         cleaned_value = re.sub(r'[^0-9.]', '', linha['bonus_percentual']) 
